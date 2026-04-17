@@ -41,9 +41,9 @@ model.fit(X_train, y_train)
 
 preds = model.predict(X_test)
 mae = mean_absolute_error(y_test, preds)
-print(f"\n✅ Model MAE: {mae:.2f}")
+print(f"\n Model MAE: {mae:.2f}")
 
 joblib.dump(model, "study_model.pkl")
 joblib.dump(features, "feature_names.pkl")
 
-print("✅ Clean model trained & saved!")
+print(" Clean model trained & saved!")
