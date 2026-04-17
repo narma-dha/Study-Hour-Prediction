@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-st.title("📚 Study Time Predictor")
+st.title("Study Time Predictor")
 
 model = joblib.load("study_model.pkl")
 
@@ -38,4 +38,4 @@ input_data = np.array([[
 
 if st.button("Predict Study Hours"):
     prediction = model.predict(input_data)[0]
-    st.success(f"📖 Recommended Study Time: {prediction:.2f} hours/week")
+    st.success(f" Recommended Study Time: {prediction:.2f} hours/week")
